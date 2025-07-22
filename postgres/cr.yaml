@@ -290,7 +290,7 @@ spec:
       - ReadWriteOnce
       resources:
         requests:
-          storage: 1Gi
+          storage: 5Gi
 #      limits:
 #          storage: 5Gi
 #    tablespaceVolumes:
@@ -563,7 +563,7 @@ spec:
             - ReadWriteOnce
             resources:
               requests:
-                storage: 1Gi
+                storage: 5Gi
 #      - name: repo2
 #        s3:
 #          bucket: "<YOUR_AWS_S3_BUCKET_NAME>"
