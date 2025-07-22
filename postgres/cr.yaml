@@ -69,14 +69,14 @@ spec:
 
 #  autoCreateUserSchema: true
 
-#  users:
-#    - name: rhino
-#      databases:
-#        - zoo
-#      options: "SUPERUSER"
-#      password:
-#        type: ASCII
-#      secretName: "rhino-credentials"
+  users:
+    - name: daniil
+      databases:
+        - demo
+      options: "SUPERUSER"
+      password:
+        type: ASCII
+      secretName: "daniil-credentials"
 #      grantPublicSchemaAccess: false
 
 #  databaseInitSQL:
@@ -306,7 +306,7 @@ spec:
     pgBouncer:
       replicas: 3
       image: docker.io/percona/percona-pgbouncer:1.24.1
-#      exposeSuperusers: true
+      exposeSuperusers: true
 #      resources:
 #        limits:
 #          cpu: 200m
